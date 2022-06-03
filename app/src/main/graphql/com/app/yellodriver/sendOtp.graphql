@@ -1,0 +1,5 @@
+mutation SendOtp($country_code: String!,$mobile : String!) {
+    SendOtp(country_code: $country_code, mobile: $mobile) {
+        user_otp
+    }
+}

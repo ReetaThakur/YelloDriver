@@ -1,0 +1,7 @@
+mutation UploadRideImage($entity_id : uuid!,$mime_type : String!, $title : String!) {
+    UploadRideRouteMap(entity_id: $entity_id,metadata: {mime_type: $mime_type, title: $title}) {
+        file_upload_id
+        upload_url
+        view_url
+    }
+}

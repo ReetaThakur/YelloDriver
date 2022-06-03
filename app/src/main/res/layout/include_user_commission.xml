@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_650dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/drawable_black_background_earining"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingEnd="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_40dp">
+
+        <TextView
+            android:id="@+id/fragment_user_commission_txtCommission"
+            style="@style/style_text_regular"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="User Onboarding Commission"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_22sp" />
+
+        <TextView
+            android:id="@+id/fragment_user_commission_txtDetails"
+            style="@style/style_text_bold"
+            android:layout_below="@+id/fragment_user_commission_txtCommission"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_40dp"
+            android:drawableEnd="@drawable/ic_forward"
+            android:drawablePadding="@dimen/dimen_20dp"
+            android:text="Details"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_22sp" />
+
+        <TextView
+            android:id="@+id/fragment_user_commission_txtPrice"
+            style="@style/style_text_bold"
+            android:layout_below="@+id/fragment_user_commission_txtDetails"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:text="$0"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_55sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_user_commission_txtPrice"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_user_commission_txtOneDayPass"
+                style="@style/style_text_bold"
+                android:text="One Day Pass"
+                android:textSize="@dimen/font_22sp" />
+
+            <TextView
+                android:id="@+id/fragment_user_commission_txtOneDayPassValue"
+                style="@style/style_text_bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:text="N/A"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_user_commission_txtPrice"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_user_commission_txtTwoDayPass"
+                style="@style/style_text_bold"
+                android:layout_gravity="center"
+                android:text="Two Day Pass"
+                android:textSize="@dimen/font_22sp" />
+
+            <TextView
+                android:id="@+id/fragment_user_commission_txtTwoDayPassValue"
+                style="@style/style_text_bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:text="0"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_user_commission_txtPrice"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_user_commission_txtThreeDayPassUser"
+                style="@style/style_text_bold"
+                android:layout_gravity="center"
+                android:text="Three Day Pass"
+                android:textSize="@dimen/font_22sp" />
+
+            <TextView
+                android:id="@+id/fragment_user_commission_txtThreeDayPassValue"
+                style="@style/style_text_bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:text="0"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_22sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

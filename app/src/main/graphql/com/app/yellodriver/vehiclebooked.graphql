@@ -1,0 +1,5 @@
+mutation setVehicleBooked($booked: Boolean, $vehicleid: uuid!) {
+    update_yt_vehicle_by_pk(pk_columns: {id: $vehicleid}, _set: {booked: $booked}) {
+        booked
+    }
+}

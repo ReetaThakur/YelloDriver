@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_black"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imgCurrentVehicleImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_450dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_banner"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/toolbar_vehicleinfo"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvnovehicleinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Vehicle Assigned"
+        android:textColor="@color/brand_yellow"
+        android:textSize="@dimen/font_32sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/svmyvehicleinfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCurrentVehicleImage"
+        app:layout_constraintWidth_percent="0.7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/style_text_bold"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:text="@string/mnu_myvehicle"
+                android:textSize="@dimen/font_32sp" />
+
+            <LinearLayout
+                style="@style/myVehicle_rowstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_25dp">
+
+                <TextView
+                    style="@style/style_text_bold"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:layout_weight="1"
+                    android:text="@string/vehicle_type"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_24sp" />
+
+                <TextView
+                    android:id="@+id/tvvehicletype"
+                    style="@style/style_text_bold"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/ntf_stg_sub"
+                    android:textSize="@dimen/font_24sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/myVehicle_rowstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp">
+
+                <TextView
+                    style="@style/style_text_bold"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_weight="1"
+                    android:text="@string/vehicle_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_24sp" />
+
+                <TextView
+                    android:id="@+id/tvvehiclename"
+                    style="@style/style_text_bold"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/ntf_stg_sub"
+                    android:textSize="@dimen/font_24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/myVehicle_rowstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp">
+
+                <TextView
+                    style="@style/style_text_bold"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:layout_weight="1"
+                    android:text="@string/vehical_number"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_24sp" />
+
+                <TextView
+                    android:id="@+id/tvvehiclenumber"
+                    style="@style/style_text_bold"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/ntf_stg_sub"
+                    android:textSize="@dimen/font_24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/myVehicle_rowstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp">
+
+                <TextView
+                    style="@style/style_text_bold"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:layout_weight="1"
+                    android:text="@string/insurance"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_24sp" />
+
+                <TextView
+                    android:id="@+id/tvvehicleinsured"
+                    style="@style/style_text_bold"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/ntf_stg_sub"
+                    android:textSize="@dimen/font_24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/myVehicle_rowstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp">
+
+                <TextView
+                    style="@style/style_text_bold"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:layout_weight="1"
+                    android:text="@string/vehical_fitness_certificate"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_24sp" />
+
+                <TextView
+                    android:id="@+id/tvvehicleisfit"
+                    style="@style/style_text_bold"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/ntf_stg_sub"
+                    android:textSize="@dimen/font_24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/myVehicle_rowstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp">
+
+                <TextView
+                    style="@style/style_text_bold"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:layout_weight="1"
+                    android:text="@string/age"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_24sp" />
+
+                <TextView
+                    android:id="@+id/tvvehicleyears"
+                    style="@style/style_text_bold"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/ntf_stg_sub"
+                    android:textSize="@dimen/font_24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/myVehicle_rowstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/style_button_bold"
+                    android:layout_margin="@dimen/dimen_50dp"
+                    android:padding="@dimen/dimen_20dp"
+                    android:text="@string/update_vehicle"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_25sp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

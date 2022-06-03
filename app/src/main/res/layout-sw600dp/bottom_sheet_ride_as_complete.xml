@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ridedetails_rounded_corner"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dimen_50dp"
+    android:paddingTop="@dimen/dimen_30dp"
+    android:paddingEnd="@dimen/dimen_50dp"
+    android:paddingBottom="@dimen/dimen_50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivnextdirection"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimen_20dp"
+                android:adjustViewBounds="true"
+                android:tint="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tvremainingstepdistance"
+                style="@style/style_text_bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:textSize="@dimen/font_30sp"
+                tools:text="350 ft" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dimen_100dp"
+                android:layout_toLeftOf="@+id/imgMarkascompletearrow"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvprimeinstructions"
+                    style="@style/style_text_bold"
+                    android:textSize="@dimen/font_40sp"
+                    tools:text="Tab Wheeler St. N Rose Place" />
+
+
+                <TextView
+                    android:id="@+id/tvarrivaltime"
+                    style="@style/style_text_regular"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_22sp"
+                    tools:text="Arrival at 60 Minutes" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgMarkascompletearrow"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimen_30dp"
+                android:src="@drawable/ic_arrow_down" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_0.5dp"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:layout_marginBottom="@dimen/dimen_25dp"
+        android:alpha="0.5"
+        android:background="@color/brand_textgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llMarkCompleteSec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivnextdirectionMarkCompleteSec"
+                android:layout_width="@dimen/dimen_80dp"
+                android:layout_height="@dimen/dimen_80dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:adjustViewBounds="true"
+                android:tint="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tvprimeinstructionsMarkCompleteSec"
+                style="@style/style_text_bold"
+                android:layout_gravity="center"
+                android:textSize="@dimen/font_30sp"
+                tools:text="N Wheeler St. N Rose Place" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvtotaldistETA"
+            style="@style/style_text_regular"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:textColor="@color/brand_yellow"
+            android:textSize="@dimen/font_22sp"
+            tools:text="25 Miles  Arrival at 2:20" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imgstartcircle"
+                android:layout_width="@dimen/dimen_15dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:src="@drawable/ic_green_circle"
+                app:layout_constraintBottom_toBottomOf="@+id/tvstartlocationcmplte"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvstartlocationcmplte" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_3dp"
+                android:layout_height="0dp"
+                android:background="@drawable/ic_start_end_trip"
+                app:layout_constraintBottom_toTopOf="@+id/imgendcircle"
+                app:layout_constraintEnd_toEndOf="@+id/imgstartcircle"
+                app:layout_constraintStart_toStartOf="@+id/imgstartcircle"
+                app:layout_constraintTop_toBottomOf="@+id/imgstartcircle" />
+
+            <ImageView
+                android:id="@+id/imgendcircle"
+                android:layout_width="@dimen/dimen_15dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:src="@drawable/ic_yellow_circle"
+                app:layout_constraintBottom_toBottomOf="@+id/tvendlocationcmplte"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvendlocationcmplte" />
+
+            <TextView
+                android:id="@+id/tvstartlocationcmplte"
+                style="@style/style_text_regular"
+                android:layout_margin="@dimen/dimen_20dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_25sp"
+                app:layout_constraintStart_toEndOf="@+id/imgstartcircle"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/sample_address" />
+
+            <TextView
+                android:id="@+id/tvendlocationcmplte"
+                style="@style/style_text_regular"
+                android:layout_margin="@dimen/dimen_20dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_25sp"
+                app:layout_constraintStart_toEndOf="@+id/imgendcircle"
+                app:layout_constraintTop_toBottomOf="@+id/tvstartlocationcmplte"
+                tools:text="@string/sample_address" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_0.5dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:alpha="0.5"
+        android:background="@color/brand_textgray" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.app.yellodriver.customview.CircleImageView
+                android:id="@+id/imgusrnamemarkascmplte"
+                android:layout_width="@dimen/dimen_60dp"
+                android:layout_height="@dimen/dimen_60dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_place_holder_user"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="@dimen/dimen_1dp" />
+
+            <TextView
+                android:id="@+id/tvusrnamemarkascmplte"
+                style="@style/style_text_regular"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dimen_30dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_25sp"
+                tools:text="@string/person_name" />
+
+            <TextView
+                android:id="@+id/tvusrratemarkascmplte"
+                style="@style/style_text_regular"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dimen_30dp"
+                android:drawableEnd="@android:drawable/btn_star"
+                android:drawableTint="@color/brand_yellow"
+                android:gravity="center"
+                android:textColor="@color/brand_yellow"
+                android:textSize="@dimen/font_25sp"
+                tools:text="4.1" />
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@android:drawable/btn_star"
+                android:tint="@color/brand_yellow" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvconfirmcodemarkascmplte"
+            style="@style/style_text_regular"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_25sp"
+            tools:text="UEID323" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMarkasComplete"
+            style="@style/style_button_bold"
+            android:layout_marginTop="@dimen/dimen_50dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_weight="1"
+            android:padding="@dimen/dimen_25dp"
+            android:text="@string/mark_as_complete"
+            android:textSize="@dimen/font_25sp" />
+
+        <Button
+            android:id="@+id/btnExtendPass"
+            style="@style/style_button_bold"
+            android:layout_height="@dimen/dimen_80dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_50dp"
+            android:layout_weight="1"
+            android:text="@string/extend_pass_request"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_25sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

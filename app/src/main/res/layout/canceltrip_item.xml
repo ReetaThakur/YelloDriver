@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCancelripReason"
+            style="@style/style_text_regular"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="@dimen/font_10sp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_25sp"
+            tools:text=" NGKNDKSBNGKDS BD KSJ" />
+
+        <ImageView
+            android:id="@+id/cancelTrip_imgSelected"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_deselect" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/smenu_divider"
+        android:layout_alignParentBottom="true" />
+
+</LinearLayout>

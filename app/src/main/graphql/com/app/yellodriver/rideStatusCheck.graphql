@@ -1,0 +1,5 @@
+query RideStatusCheck($id : uuid!) {
+    yt_ride(where: {id: {_eq: $id}}) {
+        status
+    }
+}

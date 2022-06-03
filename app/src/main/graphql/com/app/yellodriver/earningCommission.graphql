@@ -1,0 +1,9 @@
+query EarningCommission {
+    yt_get_driver_commission_plan_wise {
+        id
+        plan_title
+        total_amount
+        total_user
+        plan_validity_days
+    }
+}

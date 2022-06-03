@@ -1,0 +1,14 @@
+query MyTrips($limit: Int, $offset: Int, $driver_user_id : uuid) {
+    yt_ride(limit: $limit, offset: $offset, order_by: [{created_at: desc}] where: {driver_user_id: {_eq: $driver_user_id}}) {
+        start_location
+        start_address
+        end_location
+        end_address
+        distance
+        id
+        start_at
+        end_at
+        created_at
+        route_map_file_id
+    }
+}

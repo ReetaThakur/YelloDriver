@@ -1,0 +1,17 @@
+query MyProfile($id : uuid!) {
+    yt_user_by_pk(id: $id){
+        active
+        address
+        country_code
+        email
+        full_name
+        id
+        created_at
+        average_rate
+        mobile
+        profile
+        profile_photo {
+            id
+        }
+    }
+}

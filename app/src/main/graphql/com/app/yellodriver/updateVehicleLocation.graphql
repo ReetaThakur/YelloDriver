@@ -1,0 +1,5 @@
+mutation UpdateVehicleLocation($id : uuid!, $location : point) {
+    update_yt_vehicle_by_pk(pk_columns: {id: $id}, _set: {location:  $location}) {
+        id
+    }
+}

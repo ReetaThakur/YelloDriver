@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dimen_180dp"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:layout_marginEnd="@dimen/dimen_180dp"
+            android:layout_marginBottom="@dimen/dimen_50dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:id="@+id/fragment_update_profile_fl"
+                android:layout_width="@dimen/dimen_130dp"
+                android:layout_height="@dimen/dimen_130dp">
+
+                <com.app.yellodriver.customview.CircleImageView
+                    android:id="@+id/fragment_update_profile_imgUser"
+                    android:layout_width="@dimen/dimen_120dp"
+                    android:layout_height="@dimen/dimen_120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_place_holder_user"
+                    app:civ_border_color="@color/colorWhite"
+                    app:civ_border_width="@dimen/dimen_1dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_50dp"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/drawable_circle_purple"
+                    android:padding="@dimen/dimen_5dp"
+                    android:src="@drawable/ic_edit" />
+            </FrameLayout>
+
+
+            <TextView
+                style="@style/style_text_bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:text="@string/welcome_back"
+                android:textSize="@dimen/font_35sp" />
+
+            <TextView
+                android:id="@+id/txtUserName"
+                style="@style/style_text_bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_28sp"
+                tools:text="@string/person_name" />
+
+            <TextView
+                android:id="@+id/txtSince"
+                style="@style/style_text_regular"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_23sp"
+                tools:text="@string/since_2_years" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/blue_btn_bg_color"
+                android:progressTint="@color/brand_yellow"
+                tools:rating="4.1"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_130dp"
+                android:hint="@string/full_name"
+                android:textColorHint="@color/brand_textgray"
+                android:textStyle="bold"
+                app:hintTextAppearance="@style/TextInputHintSize"
+                app:hintTextColor="@color/brand_yellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtTxtFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/brand_textgray"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/brand_textgray"
+                    android:textSize="@dimen/font_22sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:hint="@string/lbl_email"
+                android:textColorHint="@color/brand_textgray"
+                android:textStyle="bold"
+                app:hintTextAppearance="@style/TextInputHintSize"
+                app:hintTextColor="@color/brand_yellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtTxtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/brand_textgray"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/brand_textgray"
+                    android:textSize="@dimen/font_22sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:hint="@string/lbl_mobile"
+                android:textColorHint="@color/brand_textgray"
+                android:textStyle="bold"
+                app:hintTextAppearance="@style/TextInputHintSize"
+                app:hintTextColor="@color/brand_yellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtTxtMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/brand_textgray"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/brand_textgray"
+                    android:textSize="@dimen/font_22sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/fragment_update_profile_btnUpdate"
+                style="@style/style_button_bold"
+                android:layout_marginTop="@dimen/dimen_50dp"
+                android:padding="@dimen/dimen_20dp"
+                android:text="@string/update_profile"
+                android:textSize="@dimen/font_25sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

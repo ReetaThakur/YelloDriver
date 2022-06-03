@@ -1,0 +1,8 @@
+mutation RideCancelTrip($cancellation_reason : String!, $id : uuid!) {
+    CancelRide(
+        cancellation_reason: $cancellation_reason,
+        ride_id: $id
+    ) {
+        id
+    }
+}

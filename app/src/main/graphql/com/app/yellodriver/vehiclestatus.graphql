@@ -1,0 +1,14 @@
+mutation setVehicleOnline($online: Boolean, $driverlocation: point) {
+    update_yt_vehicle(where: {},_set: {location: $driverlocation, online: $online}){
+        returning {
+            online
+        }
+    }
+}
+
+query isVehicleOnline {
+    yt_vehicle {
+        online
+        id
+    }
+}

@@ -1,0 +1,178 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/brand_black"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivbrndlogo"
+        android:layout_width="@dimen/dimen_250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/brand_logo"
+        app:layout_constraintBottom_toTopOf="@id/llloginform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/llloginform"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/guidelinehalf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelinehalf"
+        app:layout_constraintWidth_percent="0.55"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/tvwelcome"
+            style="@style/style_text_bold"
+            android:text="@string/welcome_driver"
+            android:textSize="@dimen/font_27sp"/>
+
+        <TextView
+            style="@style/style_text_regular"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:text="@string/lbl_logintocontinue"
+            android:textColor="@color/brand_textgray"
+            android:textSize="@dimen/font_18sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_50dp"
+            android:hint="@string/lbl_emailid"
+            android:textColorHint="@color/brand_textgray"
+            app:hintTextAppearance="@style/TextInputHintSize"
+            android:textStyle="bold"
+            app:hintTextColor="@color/brand_yellow"
+            app:errorTextAppearance="@style/error_appearance">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtTxtInputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/brand_textgray"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/brand_textgray"
+                android:textSize="@dimen/font_22sp"
+                android:textStyle="bold"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:backgroundTint="@color/brand_textgray"
+            android:hint="@string/password"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/brand_textgray"
+            android:visibility="visible"
+            app:hintTextAppearance="@style/TextInputHintSize"
+            app:hintTextColor="@color/brand_yellow"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorWhite"
+            app:errorTextAppearance="@style/error_appearance">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtTxtIputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/brand_textgray"
+                android:inputType="textPassword"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_22sp"
+                android:visibility="visible" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tvresetpass"
+            style="@style/style_text_bold"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/lbl_forgotpwd"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_17sp"
+            android:layout_gravity="end"/>
+
+        <Button
+            android:id="@+id/btngologin"
+            style="@style/style_button_bold"
+            android:layout_marginTop="@dimen/dimen_50dp"
+            android:padding="@dimen/dimen_20dp"
+            android:text="@string/login"
+            android:textSize="@dimen/font_25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:background="@color/colorWhite" />
+
+            <TextView
+                style="@style/style_text_regular"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:text="@string/or"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_17sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGetOtp"
+            style="@style/style_button_bold"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:padding="@dimen/dimen_20dp"
+            android:text="@string/lbl_get_otp"
+            android:textSize="@dimen/font_25sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinehalf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinequarter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

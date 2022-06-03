@@ -1,0 +1,23 @@
+query MyDocuments {
+    yt_driver_doc {
+        id
+        doc_type_id
+        updated_at
+        file_upload_id
+    }
+}
+query DocumentType {
+    yt_doc_type {
+        id
+        title
+        description
+    }
+}
+
+query VehicleDoc($vehicle_id : uuid) {
+    yt_vehicle_doc(where: {vehicle_id: {_eq: $vehicle_id}}) {
+        id
+        doc_type_id
+        file_upload_id
+    }
+}

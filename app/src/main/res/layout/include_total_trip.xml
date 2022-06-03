@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_650dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/drawable_black_background_earining"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fragment_total_trip_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/fragment_total_trip_radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60dp"
+                android:background="@drawable/drawable_background_earining_type"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/fragment_total_trip_rbWeek"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_earning_button_left"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="Week"
+                    android:textAllCaps="false"
+                    android:textColor="@color/drawable_earning_text_selector"
+                    android:textSize="@dimen/font_25sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/fragment_total_trip_rbMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_1dp"
+                    android:layout_marginRight="@dimen/dimen_1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_earning_button"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="Month"
+                    android:textAllCaps="false"
+                    android:textColor="@color/drawable_earning_text_selector"
+                    android:textSize="@dimen/font_25sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/fragment_total_trip_rbYear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_earning_button_right"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="Year"
+                    android:textAllCaps="false"
+                    android:textColor="@color/drawable_earning_text_selector"
+                    android:textSize="@dimen/font_25sp"
+                    android:textStyle="normal" />
+            </RadioGroup>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingEnd="@dimen/dimen_10dp"
+            android:paddingBottom="@dimen/dimen_40dp">
+
+            <TextView
+                android:id="@+id/fragment_total_trip_txtTotalTripAmount"
+                style="@style/style_text_bold"
+                android:layout_marginTop="@dimen/dimen_100dp"
+                android:text="Total Tip"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_22sp" />
+
+            <TextView
+                android:id="@+id/fragment_total_trip_txtMyTrip"
+                style="@style/style_text_bold"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/dimen_100dp"
+                android:layout_marginEnd="@dimen/dimen_40dp"
+                android:drawableEnd="@drawable/ic_forward"
+                android:drawablePadding="@dimen/dimen_20dp"
+                android:text="My trips"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_22sp" />
+
+            <TextView
+                android:id="@+id/fragment_total_earning_txtPrice"
+                style="@style/style_text_bold"
+                android:layout_below="@+id/fragment_total_trip_txtMyTrip"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="$0"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_55sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_total_earning_txtPrice"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/dimen_40dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fragment_total_trip_txtTotalTrip"
+                    style="@style/style_text_bold"
+                    android:text="Total Trip"
+                    android:textSize="@dimen/font_22sp" />
+
+                <TextView
+                    android:id="@+id/fragment_total_trip_txtTotalTripValue"
+                    style="@style/style_text_bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:text="N/A"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_total_earning_txtPrice"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fragment_total_trip_txtTotalTime"
+                    style="@style/style_text_bold"
+                    android:layout_gravity="center"
+                    android:text="Total Time"
+                    android:textSize="@dimen/font_22sp" />
+
+                <TextView
+                    android:id="@+id/fragment_total_trip_txtTotalTimeValue"
+                    style="@style/style_text_bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:text="N/A"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_total_earning_txtPrice"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fragment_total_trip_txtTotalDistance"
+                    style="@style/style_text_bold"
+                    android:layout_gravity="center"
+                    android:text="Total Distance"
+                    android:textSize="@dimen/font_22sp" />
+
+                <TextView
+                    android:id="@+id/fragment_total_trip_txtTotalDistanceValue"
+                    style="@style/style_text_bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:text="N/A"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_22sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+query Content($limit: Int,$offset : Int, $slugname : String) {
+    yt_content(limit: $limit, offset: $offset, where: {slug: {_eq: $slugname}}) {
+        content
+        id
+        slug
+        title
+    }
+}

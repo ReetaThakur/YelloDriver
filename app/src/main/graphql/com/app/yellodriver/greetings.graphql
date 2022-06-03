@@ -1,0 +1,11 @@
+query Greetings($context : String , $active : Boolean, $id : uuid!) {
+    yt_greeting(where: {context: {_eq: $context}, active: {_eq: $active}}) {
+        context
+        id
+        message
+    }
+
+    yt_user(where: {id: {_eq: $id}}) {
+        full_name
+    }
+}

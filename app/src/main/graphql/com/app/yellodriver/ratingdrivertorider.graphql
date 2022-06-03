@@ -1,0 +1,10 @@
+mutation GiveRatingToRider($from_user_type: String,$from_user_id: uuid,
+    $to_user_type: String,$to_user_id: uuid,
+    $ride_id: uuid,$given_rate: Float) {
+    insert_yt_rating_one(object: {from_user_type: $from_user_type,from_user_id: $from_user_id,
+        to_user_type: $to_user_type,to_user_id: $to_user_id
+        ride_id: $ride_id,
+        given_rate: $given_rate}) {
+        id
+    }
+}

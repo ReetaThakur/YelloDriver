@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/pure_black">
+
+    <TextView
+        android:id="@+id/tvnotifdatehdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jan 26"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/notifcntnt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        android:padding="@dimen/dimen_14dp"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/notifcntnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/listitemGray"
+        android:padding="@dimen/dimen_8dp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        app:layout_constraintBottom_toTopOf="@id/vwnotifdivider"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent">
+
+
+        <TextView
+            android:id="@+id/tvnewnotiflbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/brand_yellow"
+            android:gravity="center"
+            android:minWidth="@dimen/dimen_80dp"
+            android:padding="@dimen/dimen_2dp"
+            android:text="New"
+            android:textColor="@color/pure_black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/brbelownew"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/brbelownew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="civusrimg,tvnotiftxt"
+            app:layout_constraintTop_toBottomOf="@+id/tvnewnotiflbl" />
+
+
+        <com.app.yellodriver.customview.CircleImageView
+            android:id="@+id/civusrimg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/user"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvnotiftxt"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvnotiftxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:minLines="2"
+            android:text="The sample notification to test two lines or multiple lines of text in the row so it can auto expand and the view can be tested"
+            android:textColor="@color/brand_textgray"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/brfordtndist"
+            app:layout_constraintTop_toTopOf="@id/brbelownew" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/brfordtndist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tvdatenotif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvnotiftxt" />
+
+
+        <TextView
+            android:id="@+id/tvdatenotif"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:gravity="end|center_vertical"
+            tools:text="2 min ago"
+            android:textColor="@color/brand_textgray"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/brfordtndist"
+            app:layout_constraintWidth_percent="0.5" />
+
+
+
+
+        <!--<ImageView
+            android:id="@+id/ivnotifarrw"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/drawable_circle_purple"
+            android:src="@drawable/ic_arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tvnotiftxt"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/vwnotifdivider"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/pure_black"
+        app:layout_constraintTop_toBottomOf="@id/notifcntnt"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

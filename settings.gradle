@@ -1,0 +1,2 @@
+include ':app', ':kalert-dialog'
+rootProject.name = "YelloDriver"

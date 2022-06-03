@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_200dp"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:background="@color/pure_black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dimen_200dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgTrip"
+            android:layout_width="@dimen/dimen_166dp"
+            android:layout_height="match_parent"
+            android:minHeight="@dimen/dimen_200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/placeholder_banner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/drawable_circle_purple"
+                android:src="@drawable/ic_arrow_right"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:src="@drawable/start_ring" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start: "
+                    android:textColor="@color/brand_yellow"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvtripstartaddress"
+                    android:layout_width="@dimen/dimen_200dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp"
+                    android:maxLines="2"
+                    android:ellipsize="marquee"
+                    tools:text="244 W Branch " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:src="@drawable/end_ring" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End: "
+                    android:textColor="@color/brand_yellow"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvtripendaddress"
+                    android:layout_width="@dimen/dimen_200dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp"
+                    android:ellipsize="marquee"
+                    android:maxLines="2"
+                    tools:text="3131  S Las Vegas" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:id="@+id/tvtripcreatedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/brand_textgray"
+                    android:textSize="@dimen/font_16sp"
+                    android:textStyle="bold"
+                    tools:text="23rd May, 2020" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tvtripdistanceduration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/brand_textgray"
+                    android:textSize="@dimen/font_18sp"
+                    tools:text="4.3m | 17m" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7626bc</color>
+    <color name="colorPrimaryDark">#7626bc</color>
+    <color name="colorAccent">#fffd00</color>
+
+    <color name="colorTransparent">@android:color/transparent</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorRoutePath">#66dbf4</color>
+    <color name="brand_black">#101510</color>
+    <color name="colorYellow">#fffd00</color>
+    <color name="brand_yellow">#fffd00</color>
+    <color name="brand_purple">#7626bc</color>
+    <color name="colorDarkGray">#272727</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPageSelected">#8f8f87</color>
+    <color name="colorPageNormal">#535353</color>
+
+    <color name="colorPurple">#7626bc</color>
+    \
+    <color name="colorLightGray">#b5b5b5</color>
+
+    <color name="brand_textgray">#b5b5b5</color>
+    <color name="colorGray">#313131</color>
+    <color name="listitemGray">#3f3f3f</color>
+    <color name="pure_black">#000000</color>
+    <color name="pure_black_light">#131313</color>
+    <color name="startgreen">#08fd00</color>
+    <color name="inactivegray">#aeaeae</color>
+    <color name="expandlist_child_color">#cccccc</color>
+    <color name="color_copy_right">#787878</color>
+
+    <color name="colorOnline">#08fd00</color>
+    <color name="colorOffline">#D50000</color>
+
+    <color name="sb_swipe_bg_color_default">@color/pure_black</color>
+    <color name="sb_thumb_button_color_default">@color/pure_black</color>
+    <color name="sb_stroke_color_default">#FFFFFF</color>
+    <color name="sb_text_color_default">#FFFFFF</color>
+
+    <color name="ntf_stg_sub">#cccccc</color>
+    <color name="colorRedError">#D32F2F</color>
+
+    <!-- Custom Route Colors -->
+    <color name="customRouteCasingColor">#00000000</color>
+    <color name="customRouteColor">#66dbf4</color>
+    <color name="customRouteLowCongestionColor">#00ff00</color>
+
+    <!--make it transparent to show route color-->
+    <color name="customRouteUnknownCongestionColor">#00000000</color>
+
+    <color name="customRouteModerateCongestionColor">#CFAC00</color>
+    <color name="customRouteHeavyCongestionColor">#D16100</color>
+    <color name="customRouteSevereCongestionColor">#FF0000</color>
+    <color name="customRouteLineTraveledColor">#a8aaba</color>
+    <color name="customRouteLineCasingTraveledColor">#6E707A</color>
+
+    <color name="customAlternativeRouteColor">#7EC8CF</color>
+    <color name="customAlternativeRouteUnknownCongestionColor">#7EC8CF</color>
+    <color name="customAlternativeRouteModerateCongestionColor">#76BCC2</color>
+    <color name="customAlternativeRouteHeavyCongestionColor">#67A3A8</color>
+    <color name="customAlternativeRouteSevereCongestionColor">#4F7E82</color>
+    <color name="customAlternativeRouteCasingColor">#284042</color>
+</resources>

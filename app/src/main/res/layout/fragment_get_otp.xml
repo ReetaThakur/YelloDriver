@@ -1,0 +1,84 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/brand_black"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivbrndlogo"
+        android:layout_width="@dimen/dimen_270dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimen_100dp"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/dimen_10dp"
+        android:src="@drawable/brand_logo"
+        app:layout_constraintBottom_toTopOf="@id/llmobileloginform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llmobileloginform"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/guidelinehalf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelinehalf"
+        app:layout_constraintWidth_percent="0.55"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilmobileforotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_50dp"
+            android:hint="@string/lbl_mobile_number"
+            android:textColorHint="@color/brand_yellow"
+            android:textStyle="bold"
+            app:hintTextAppearance="@style/TextInputHintSize"
+            app:hintTextColor="@color/brand_yellow"
+            app:errorTextAppearance="@style/error_appearance">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_get_otp_edtMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/brand_textgray"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/brand_textgray"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/fragment_get_otp_btnGetOtp"
+            style="@style/style_button_bold"
+            android:layout_marginTop="@dimen/dimen_100dp"
+            android:padding="@dimen/dimen_20dp"
+            android:text="@string/lbl_get_otp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_25sp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinehalf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinequarter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+</androidx.constraintlayout.widget.ConstraintLayout>

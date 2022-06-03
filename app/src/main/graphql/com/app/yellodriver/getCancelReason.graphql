@@ -1,0 +1,7 @@
+query GetCancelReason($slug : String) {
+    yt_system_setting(where: {slug: {_eq: $slug}}) {
+        content
+        slug
+        id
+    }
+}

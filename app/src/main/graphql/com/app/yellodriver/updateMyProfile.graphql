@@ -1,0 +1,6 @@
+mutation UpdateProfile($user_id : uuid!,$country_code : String,$email : String,$full_name : String, $mobile : String) {
+    UpdateUser(user_id: $user_id, country_code: $country_code, email: $email, full_name: $full_name, mobile: $mobile) {
+        user
+        user_id
+    }
+}

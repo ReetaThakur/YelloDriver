@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+
+    <include
+        android:id="@+id/toolbar_user_onboarding_step_two"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/drawable_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_user_onboarding_step_two">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingEnd="@dimen/dimen_10dp"
+            android:paddingBottom="@dimen/dimen_10dp">
+
+            <TextView
+                style="@style/style_text_regular"
+                android:layout_gravity="center"
+                android:text="@string/step_2_4"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/font_16sp" />
+
+            <TextView
+                style="@style/style_text_bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:text="@string/lbl_otp_verification"
+                android:textSize="@dimen/font_16sp" />
+
+            <TextView
+                style="@style/style_text_regular"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:paddingStart="@dimen/dimen_10dp"
+                android:paddingEnd="@dimen/dimen_10dp"
+                android:text="@string/enter_6_digit_otp"
+                android:textAlignment="center"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/font_22sp" />
+
+            <com.app.yellodriver.customview.OtpView
+                android:id="@+id/user_onboarding_step_two_otpView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                app:cursorColor="@color/colorLightGray"
+                app:hideLineWhenFilled="false"
+                app:itemCount="6"
+                android:lineHeight="@dimen/dimen_5dp"
+                app:itemSpacing="@dimen/dimen_12dp"
+                app:itemWidth="@dimen/dimen_40dp"
+                app:lineColor="@drawable/otp_item_state"
+                app:state_filled="true"
+                app:viewType="line" />
+
+            <TextView
+                android:id="@+id/user_onboarding_step_two_txtResendOtp"
+                style="@style/style_text_bold"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_40dp"
+                android:text="@string/resend_otp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_20sp" />
+
+            <Button
+                android:id="@+id/fragment_user_onboarding_step_two_btnNext"
+                style="@style/style_button_bold"
+                android:layout_marginTop="@dimen/dimen_60dp"
+                android:padding="@dimen/dimen_20dp"
+                android:text="@string/next"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_25sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

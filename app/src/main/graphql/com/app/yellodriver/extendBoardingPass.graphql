@@ -1,0 +1,8 @@
+mutation ExtendBoardingPass($extend_by_days : Int!,$pass_id : uuid! ) {
+    ExtendBoardingPass(extend_by_days: $extend_by_days, pass_id: $pass_id) {
+        status
+        order_number
+        order_id
+        order_details
+    }
+}

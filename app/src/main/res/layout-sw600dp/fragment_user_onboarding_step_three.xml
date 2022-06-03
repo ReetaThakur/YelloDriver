@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+
+    <include
+        android:id="@+id/toolbar_user_onboarding_step_three"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/drawable_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_user_onboarding_step_three">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_100dp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_100dp">
+
+            <TextView
+                style="@style/style_text_regular"
+                android:layout_gravity="center"
+                android:text="@string/step_3_4"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/font_32sp" />
+
+            <TextView
+                style="@style/style_text_bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_70dp"
+                android:text="@string/lbl_choose_plan"
+                android:textSize="@dimen/font_32sp" />
+
+            <com.jama.carouselview.CarouselView
+                android:id="@+id/fragment_user_onboarding_step_three_CarouselView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                app:carouselOffset="center"
+                app:enableSnapping="true"
+                app:indicatorAnimationType="worm"
+                app:indicatorPadding="10"
+                app:indicatorRadius="5"
+                app:indicatorSelectedColor="@color/colorPageSelected"
+                app:indicatorUnselectedColor="@color/colorPageNormal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_home_toolbar"
+                app:resource="@layout/row_select_plan"
+                app:scaleOnScroll="true"
+                app:spacing="20" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

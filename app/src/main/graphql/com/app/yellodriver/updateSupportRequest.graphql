@@ -1,0 +1,6 @@
+mutation UpdateSupportRequest($id: uuid!,$attachments: jsonb) {
+    update_yt_support_request_by_pk(pk_columns: {id: $id}, _set: {attachments: $attachments}) {
+        id
+        status
+    }
+}

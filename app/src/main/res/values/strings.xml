@@ -1,0 +1,303 @@
+<resources>
+    <string name="app_name">Yello Driver</string>
+
+    <!--Common Strings-->
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="next">NEXT</string>
+    <string name="back">BACK</string>
+    <string name="submit">Submit</string>
+    <string name="update">Update</string>
+    <string name="string_settings">Settings</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="share">Share</string>
+
+    <!-- All types of messages which are shown to the User.-->
+    <!--Common Alert Msg-->
+    <string name="alert_message_error">Something went wrong please try after sometime.</string>
+    <string name="alert_network_error">Network error! Try after sometime.</string>
+    <string name="alert_some_error">Something went wrong, try again</string>
+    <string name="alert_no_connection">No internet connection</string>
+    <string name="alert_check_gps">Geolocation is OFF</string>
+    <string name="alert_no_data_message">No data available to show.</string>
+
+    <string name="click_here_to_refresh">Click here to refresh</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="yello_driver">Yello Driver</string>
+    <string name="welcome_driver">Welcome Driver</string>
+    <string name="stripe_unavailable">Stripe Payment Device Not Found!</string>
+    <string name="lbl_logintocontinue">Please login to continue</string>
+    <string name="lbl_reset_pwd_link">We will send you the reset password link</string>
+    <string name="lbl_willsendotp">We will sent you the OTP</string>
+    <string name="lbl_forgotpwd">Forgot Password?</string>
+    <string name="receive_otp_on_mobile_no">Receive OTP on mobile no.</string>
+    <string name="receive_link_on_email">Receive link on email</string>
+    <string name="login">Login</string>
+    <string name="lbl_emailid">Email ID</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_mobile">Mobile No.</string>
+    <string name="password">Password</string>
+    <string name="lbl_verifyotp">Verify OTP</string>
+    <string name="lbl_entercode">Please enter that code below and verify your account</string>
+    <string name="lbl_otp">OTP</string>
+    <string name="lbl_resendotp">Resend OTP</string>
+    <string name="lbl_get_otp">Get OTP</string>
+    <string name="lbl_mobile_number">Mobile number</string>
+    <string name="sos">SOS</string>
+    <string name="you_are_accepting_ride_requests">You are ACCEPTING ride requests</string>
+    <string name="you_are_not_accepting_ride_requests">You are NOT ACCEPTING ride requests</string>
+
+    <string name="ride_details">Ride Details</string>
+    <string name="pickup">Pickup</string>
+    <string name="sample_address">Las Vegas airport,5757 Wayne Newton blvd, paradise, usa-01</string>
+    <string name="customer">Customer</string>
+    <string name="stove_starc">Stove starc</string>
+    <string name="distance">Distance</string>
+    <string name="no_maps_navigator">Google Maps Navigation has not been installed. Please install Maps for Navigation.</string>
+
+    <!-- Testing Accounts   -->
+    <!--        <string name="mapbox_access_token" translatable="false">pk.eyJ1IjoiZGFyamlwcmFuYXYiLCJhIjoiY2tiaXZic3VrMGZmbzJycXBjMXlucjNtYyJ9.5iCyIX4olerRgWpoSrX_Xw</string>-->
+
+    <!-- Client Accounts    -->
+    <string name="mapbox_access_token" translatable="false">pk.eyJ1IjoiamVyZW1jYnJpZGUiLCJhIjoiY2tmd3YxZmdlMW45YjJ5dHMyc2dodjVpNCJ9.tLtUkzHaQ0fCfUaETptasA</string>
+
+    <!--Basic user location permission toasts-->
+    <string name="user_location_permission_explanation">This app needs location permissions in order to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
+    <string name="lbl_accept">Accept</string>
+    <string name="lbl_decline">Decline</string>
+    <string name="cancel_trip">Cancel Trip</string>
+    <string name="decline_trip">Decline Trip</string>
+
+    <string name="lbl_resetpassw">Reset Password</string>
+    <string name="lbl_newpassword">New Password</string>
+    <string name="lbl_confnewpaswrd">Confirm New Password</string>
+    <string name="lbl_update">Update</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="or">or</string>
+
+    <string name="mnu_useronboard">User Onboard</string>
+    <string name="mnu_myprofile">My Profile</string>
+    <string name="mnu_assigned_vehicle">Assigned Vehicle</string>
+    <string name="mnu_mydocuments">My Documents</string>
+    <string name="mnu_history">History</string>
+    <string name="mnu_logout">Logout</string>
+    <string name="mnu_privacypolicy">Privacy Policy</string>
+    <string name="mnu_termscondition">Terms &amp; condition></string>
+    <string name="mnu_aboutus">About Us</string>
+    <string name="mnu_faqs">FAQs</string>
+    <string name="mnu_notificationsetting">Notification Setting</string>
+    <string name="mnu_myvehicle">My Vehicle</string>
+    <string name="mnu_help_desk">Help Desk</string>
+    <string name="mnu_document">Document</string>
+    <string name="mnu_mytrips">My Trips</string>
+
+    <string name="about_us">About Us</string>
+    <string name="notification">Notifications</string>
+    <string name="my_trips">My Trips</string>
+    <string name="transition">bottomtotop</string>
+
+    <string name="leave_rating">Leave Rating</string>
+    <string name="mark_as_complete">Mark as Complete</string>
+    <string name="are_you_sure_you_want_to_cancel_this_trip">Are you sure you want to cancel this trip</string>
+    <string name="person_name">Michal Jordan</string>
+    <string name="ride_has_been_completed_successfully">Ride has been completed successfully</string>
+    <string name="trip_has_been_cancelled_successfully">Trip has been cancelled successfully</string>
+
+    <string name="scanqrcode">Scan QR Code</string>
+    <string name="notificationsetting">Notification Settings</string>
+    <string name="push_notification">Push Notification</string>
+    <string name="emailnotification">Email Notification</string>
+    <string name="smsnotification">SMS Notification</string>
+    <string name="promotionnotification">Promotion Notification</string>
+    <string name="flashonriderequestnotification">Flash On Ride Request Notification</string>
+    <string name="vibreationonriderequestnotification">Vibration On Ride Request Notification</string>
+    <string name="desc_notification">Once disabled, you do not able to received any update or notification from yellow can on your device,</string>
+    <string name="vehicle_type">Vehicle Type</string>
+
+    <string name="vehicle_name">Vehicle Name</string>
+    <string name="toyota_corolla_altis">Toyota Corolla Altis</string>
+    <string name="vehical_number">Vehical Number</string>
+    <string name="insurance">Insurance</string>
+    <string name="vehical_fitness_certificate">Vehical Fitness Certificate</string>
+    <string name="age">Age</string>
+    <string name="update_vehicle">Update Vehicle</string>
+
+    <string name="you_are_online">You are Online</string>
+    <string name="you_are_offline">You are Offline</string>
+    <string name="welcome_back">Welcome back,</string>
+    <string name="full_name">Full Name</string>
+    <string name="update_profile">Update profile</string>
+    <string name="since_2_years">Since 2 years</string>
+    <string name="my_account">My Account</string>
+    <string name="settings">Settings</string>
+    <string name="confirm">Confirm</string>
+    <string name="not_now">Not now</string>
+    <string name="renew_pass">Renew Pass</string>
+    <string name="sent_payment_link">Sent payment link</string>
+    <string name="string_continue">Continue</string>
+    <string name="extend_pass_request">Extend Pass Request</string>
+    <string name="start">Start</string>
+    <string name="copyright">Copyright © 2020 Yello Cab. Terms of use.</string>
+
+    <string name="profile">Profile</string>
+    <string name="policy">A privacy policy is a statement or a legal document (in privacy law) that discloses some or all of the ways a party gathers, uses, discloses, and manages a customer or client\'s data. Personal information can be anything that can be used to identify an individual, not limited to the person\'s name, address, date of birth, marital status, contact information, ID issue, and expiry date, financial records, credit information, medical history, where one travels, and intentions to acquire goods and services.[1] In the case of a business it is often a statement that declares a party\'s policy on how it collects, stores, and releases personal information it collects. It informs the client what specific information is collected, and whether it is kept confidential, shared with partners, or sold to other firms or enterprises.[2] Privacy policies typically represent a broader, more generalized treatment, as opposed to data use statements, which tend to be more detailed and specific.\n\n
+
+The exact contents of a certain privacy policy will depend upon the applicable law and may need to address requirements across geographical boundaries and legal jurisdictions. Most countries have their own legislation and guidelines of who is covered, what information can be collected, and what it can be used for. In general, data protection laws in Europe cover the private sector as well as the public sector. Their privacy laws apply not only to government operations but also to private enterprises and commercial transactions.[3]\n\n
+
+California Business and Professions Code, Internet Privacy Requirements (CalOPPA) mandate that websites collecting Personally Identifiable Information (PII) from California residents must conspicuously post their privacy policy.[4] (See also Online Privacy Protection Act)</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="faqs">FAQs</string>
+    <string name="user_guide">User Guide</string>
+    <string name="contact_us">Contact US</string>
+
+    <string name="lbl_nothinghere">Nothing here!!!</string>
+    <string name="lbl_navtosettings">Tap the notification settings button below and check again.</string>
+    <string name="lbl_describeproblem">Describe your problem</string>
+    <string name="hint_typequery">Type here your query</string>
+
+    <string name="msg_help_request_success">Help request has been created successfully</string>
+    <string name="msg_sos_sent_success">SOS has been sent successfully</string>
+    <string name="lbl_ok">OK</string>
+    <string name="err_emptyname">Please enter rider name</string>
+    <string name="err_emptyemailormobile">Please enter email or mobile</string>
+    <string name="err_invalidemailormobile">Please enter valid email or mobile</string>
+    <string name="err_emptypassword">Please enter password</string>
+    <string name="err_incorrectemailpassword">Your email or password is incorrect</string>
+    <string name="err_emptyemail">Please enter email</string>
+    <string name="err_invalidemail">Please enter valid email</string>
+    <string name="msg_success_emailsent">Email sent successfully</string>
+    <string name="err_emptymobile">Please enter mobile number</string>
+    <string name="err_invalidmobile">Please enter valid mobile number</string>
+    <string name="err_emptynewpassword">Please enter new password</string>
+    <string name="err_emptyconfirmpassword">Please enter confirm password</string>
+    <string name="err_mismatchpassword">Confirm password should match new password</string>
+    <string name="msg_success_passwordchange">Password updated</string>
+    <string name="msg_success_supportrequest">Support request submitted.</string>
+    <string name="err_emptyotp">Please enter OTP</string>
+    <string name="err_incorrect_otp">Please enter correct OTP</string>
+    <string name="msg_sendingotp">Sending OTP</string>
+    <string name="msg_success_otpsent">OTP sent successfully</string>
+    <string name="msg_success_profile_update">Profile has been updated successfully.</string>
+
+
+    <string name="average_rating">%d</string>
+
+    <string name="bundle_slugname">slugname</string>
+    <string name="bundle_heading">heading</string>
+    <string name="bundle_mobile_number">mobile_number</string>
+    <string name="bundle_from_get_otp">from get otp</string>
+    <string name="bundle_profile_data">profile_data</string>
+    <string name="msg_riderejectsuccess">Ride rejected successfully</string>
+    <string name="msg_ridestartsuccess">Ride started successfully</string>
+    <string name="msg_ridecompletesuccess">Ride completed successfully</string>
+
+    <string name="minutes">Minutes</string>
+
+    <!--  Testing Mapbox Style  -->
+    <!--    <string name="map_style">"mapbox://styles/darjipranav/ckcfteua80gou1iqxk4wg2kmb"</string>-->
+    <!-- Client Mapbox Style   -->
+    <string name="map_style">"mapbox://styles/jeremcbride/ckfz8b17x0zkg19ofqft2sf4q"</string>
+    <!-- ALL notification channel    -->
+    <string name="notification_channel_online">Online</string>
+    <string name="notification_channel_offline">Offline</string>
+    <string name="notification_channel_other">Other</string>
+
+
+    <string name="step_1_4">STEP 1/4</string>
+    <string name="step_2_4">STEP 2/4</string>
+    <string name="step_3_4">STEP 3/4</string>
+    <string name="step_4_4">STEP 4/4</string>
+
+    <string name="lbl_user_boarding">User Boarding</string>
+    <string name="lbl_register_mobile_no">Register Mobile Number</string>
+    <string name="lbl_enter_mobile_no_onboarding">Enter user\'s mobile number and full name for onboarding</string>
+
+    <string name="lbl_otp_verification">OTP Verification</string>
+    <string name="enter_6_digit_otp">Enter the verification code we just sent you on your mobile number</string>
+    <string name="resend_otp">Resend OTP</string>
+
+    <string name="lbl_choose_plan">Choose a Plan</string>
+    <string name="lbl_select">Select</string>
+
+    <string name="lbl_use_pass">Use Pass</string>
+    <string name="lbl_pass_type">Pass Type</string>
+    <string name="lbl_pass_id">Pass ID</string>
+    <string name="lbl_purchased">Purchased:</string>
+    <string name="lbl_validity">Validity:</string>
+    <string name="lbl_amount">Amount</string>
+    <string name="lbl_send">Send</string>
+    <string name="lbl_send_boarding_pass">Send Boarding Pass</string>
+
+    <string name="lbl_basic">Basic</string>
+    <string name="lbl_advanced">Advanced</string>
+    <string name="lbl_premium">Premium</string>
+    <string name="lbl_limited_travel">Limited Travels</string>
+    <string name="lbl_view">View</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+    <string name="plan_detail_dummy">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="plan_details">Plan Details</string>
+
+    <string name="content_ride_request">You have new ride request</string>
+    <string name="channel_name_ride_request">Ride Request</string>
+
+    <string name="earning">Earning</string>
+    <string name="user_onboarding">User Onboarding</string>
+    <string name="onboardhistory">On Board History</string>
+    <string name="searchbyname">Search By Name</string>
+    <string name="onboarded_on">OnBoarded on:</string>
+    <string name="pass_type">Pass Type:</string>
+    <string name="name">Name</string>
+
+    <string name="add_new_onboard_user">Add a New User</string>
+    <string name="history">History</string>
+    <string name="stats">Stats</string>
+
+    <string name="greeting_title">Good morning Lance</string>
+    <string name="greeting_description">Thank you for being a part of the Yello and being there for our fleet.Safe driving</string>
+    <string name="greeting_letsgo">Lets go!</string>
+    <string name="gps_permission_needed">GPS Permission needed</string>
+    <string name="gps_permission_needed_explaination">GPS permission needed for accessing driver\'s location..</string>
+    <string name="location_permission_needed">Location Permission needed</string>
+    <string name="location_permission_explanation">Location permission needed for accessing driver\'s location..</string>
+
+    <string name="lbl_tellusissue">Tell us about your issue</string>
+    <string name="lbl_describeissue">Describe your issue here</string>
+    <string name="do_you_want_to_logout">Do you want to logout?</string>
+    <string name="err_emptyIssue">Please enter valid issue</string>
+    <string name="lbl_sos_title">Are you in Emergency?</string>
+    <string name="lbl_sos_desc">Your location and vehicle details will be shared with emergency responders.</string>
+
+
+    <string name="open_location_setting">Open location settings</string>
+    <string name="enable_location_service">Please enable location services</string>
+
+    <string name="please_use_card">Please swipe card now.</string>
+    <string name="boarding_pass_extended_success">Your boarding pass has been extended successfully.</string>
+    <string name="ride_cancel_by_user">Ride has been canceled.</string>
+    <string name="previous_ride_cancel">Ride has been canceled by rider.</string>
+
+    <string name="pass_plan_amount">Price :- $%d</string>
+
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="make_sure_wifi">Make sure wifi or cellular data is turned on and then try again.</string>
+    <string name="try_again">Try again</string>
+
+    <string name="unlimited_ride">Unlimited Rides</string>
+    <string name="limited_rides">Total %d rides</string>
+    <string name="hours_validity">%d Hours Validity</string>
+
+    <string name="please_go_online">You are offline, To receive the ride requests, please go online.</string>
+    <string name="user_block">Seems like you do not have access to use Yello Driver Application. Please contact your HR from Yello.</string>
+
+    <string name="floating_button_permission">This App uses a floating button which will help you navigate back to the app during an on-going ride. Please enable it.</string>
+
+</resources>

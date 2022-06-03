@@ -1,0 +1,9 @@
+subscription UserInfoChanged {
+    yt_user {
+        email
+        full_name
+        id
+        mobile
+        profile
+    }
+}

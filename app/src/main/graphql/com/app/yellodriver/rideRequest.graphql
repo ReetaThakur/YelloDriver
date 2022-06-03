@@ -1,0 +1,67 @@
+subscription RideRequest($is_accepted:Boolean, $available : Boolean, $is_rejected : Boolean, $driver_user_id : uuid, $status : String) {
+    yt_ride_request(where: {is_accepted: {_eq: $is_accepted}, available: {_eq: $available}, is_rejected: {_eq: $is_rejected}, driver_user_id: {_eq: $driver_user_id}, ride: {status: {_eq: $status}}}, order_by: [{updated_at: desc}], limit: 1) {
+        available
+        created_at
+        driver_user_id
+        eta_number
+        eta_unit
+        id
+        is_accepted
+        is_rejected
+        rejected_at
+        ride_id
+        updated_at
+        ride {
+            end_address
+            end_location
+            start_address
+            start_location
+            status
+            user_id
+            boarding_pass_id
+            user {
+                email
+                full_name
+                mobile
+                profile_photo {
+                    file_object
+                }
+                average_rate
+                profile_photo_file_id
+            }
+        }
+    }
+}
+#subscription RideRequest($is_accepted:Boolean, $available : Boolean, $is_rejected : Boolean) {
+#    yt_ride_request(where: {is_accepted: {_eq: $is_accepted}, available: {_eq: $available}, is_rejected: {_eq: $is_rejected},ride: {id: {_is_null: false}}}, order_by: [{updated_at: desc}], limit: 1) {
+#        available
+#        created_at
+#        driver_user_id
+#        eta_number
+#        eta_unit
+#        id
+#        is_accepted
+#        is_rejected
+#        rejected_at
+#        ride_id
+#        updated_at
+#        ride {
+#            end_address
+#            end_location
+#            start_address
+#            start_location
+#            status
+#            user_id
+#            user {
+#                email
+#                full_name
+#                mobile
+#                profile_photo {
+#                    file_object
+#                }
+#                average_rate
+#                profile_photo_file_id
+#            }
+#        }
+#    }
+#}

@@ -1,0 +1,17 @@
+query EarningBasedOnTime($range:timestamptz_comparison_exp!) {
+    total_tip_week: yt_user_wallet_aggregate(
+        where: {
+            context: {_eq: "TIP"},
+            created_at: $range
+        }
+    ) {
+        aggregate {
+            sum {
+                amount
+                ride_distance
+                ride_duration
+            }
+            count(columns: [id])
+        }
+    }
+}

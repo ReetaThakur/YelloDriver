@@ -1,0 +1,5 @@
+mutation CreateUser($country_code: String!,$mobile :String!, $type :String!, $otp_secret : String!,$full_name : String!, $otp_code :String!) {
+    CreateUser(country_code: $country_code, mobile: $mobile, type: $type, otp_secret: $otp_secret, full_name: $full_name, otp_code: $otp_code) {
+        user_id
+    }
+}

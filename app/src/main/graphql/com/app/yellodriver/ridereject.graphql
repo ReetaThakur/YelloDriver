@@ -1,0 +1,11 @@
+mutation RideReject($ride_request_id:ID!, $ride_id:ID!) {
+    RejectRide(
+        ride_request: {
+            id: $ride_request_id,
+            ride_id: $ride_id
+        }) {
+        id
+        is_rejected
+        rejected_at
+    }
+}

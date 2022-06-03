@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/pure_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dimen_120dp"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:layout_marginEnd="@dimen/dimen_120dp"
+            android:layout_marginBottom="@dimen/dimen_40dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="@dimen/dimen_130dp"
+                android:layout_height="@dimen/dimen_130dp">
+
+                <com.app.yellodriver.customview.CircleImageView
+                    android:id="@+id/fragment_my_profile_imgUser"
+                    android:layout_width="@dimen/dimen_120dp"
+                    android:layout_height="@dimen/dimen_120dp"
+                    android:layout_gravity="center_horizontal"
+                    app:civ_border_width="@dimen/dimen_1dp"
+                    app:civ_border_color="@color/colorWhite"
+                    android:src="@drawable/ic_place_holder_user" />
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/dimen_50dp"-->
+<!--                    android:layout_height="@dimen/dimen_50dp"-->
+<!--                    android:layout_gravity="bottom"-->
+<!--                    android:background="@drawable/drawable_circle_purple"-->
+<!--                    android:padding="@dimen/dimen_5dp"-->
+<!--                    android:src="@drawable/ic_edit" />-->
+            </FrameLayout>
+
+
+            <TextView
+                style="@style/style_text_bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:text="@string/welcome_back"
+                android:textSize="@dimen/font_35sp" />
+
+            <TextView
+                android:id="@+id/fragment_my_profile_txtName"
+                style="@style/style_text_bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                tools:text="@string/person_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_28sp" />
+
+            <TextView
+                android:id="@+id/fragment_my_profile_txtSince"
+                style="@style/style_text_regular"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                tools:text="@string/since_2_years"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_23sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/blue_btn_bg_color"
+                android:progressTint="@color/brand_yellow"
+                tools:rating="4.1"
+                android:isIndicator="true"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5dp"
+                android:layout_marginTop="@dimen/dimen_70dp"
+                android:layout_marginBottom="@dimen/dimen_15dp"
+                android:alpha="0.5"
+                android:background="@color/brand_textgray" />
+
+
+            <TextView
+                android:id="@+id/txtUpdateProfile"
+                style="@style/style_text_regular"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:drawableEnd="@drawable/ic_forward"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_10dp"
+                android:text="Update Profile"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_18sp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtMyRating"-->
+<!--                style="@style/style_text_regular"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:layout_marginTop="@dimen/dimen_30dp"-->
+<!--                android:drawableEnd="@drawable/ic_forward"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:padding="@dimen/dimen_10dp"-->
+<!--                android:text="My Ratings"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:textSize="@dimen/font_18sp" />-->
+
+            <TextView
+                android:id="@+id/txtMyTrips"
+                style="@style/style_text_regular"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:drawableEnd="@drawable/ic_forward"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_10dp"
+                android:text="My Trips"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_18sp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtMyQrCode"-->
+<!--                style="@style/style_text_regular"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:layout_marginTop="@dimen/dimen_30dp"-->
+<!--                android:drawableEnd="@drawable/ic_forward"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:padding="@dimen/dimen_10dp"-->
+<!--                android:text="My QR Code"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:textSize="@dimen/font_18sp" />-->
+
+            <TextView
+                android:id="@+id/txtSettings"
+                style="@style/style_text_regular"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:drawableEnd="@drawable/ic_forward"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_10dp"
+                android:text="Settings"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_18sp" />
+
+            <TextView
+                android:id="@+id/txtLogout"
+                style="@style/style_text_regular"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:drawableEnd="@drawable/ic_forward"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_10dp"
+                android:text="Logout"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_18sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0.5dp"
+                android:layout_marginTop="@dimen/dimen_100dp"
+                android:alpha="0.5"
+                android:background="@color/brand_textgray" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/style_text_regular"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dimen_40dp"
+        android:letterSpacing="-0.01"
+        android:lineSpacingExtra="@dimen/font_12sp"
+        android:text="@string/copyright"
+        android:textColor="@color/color_copy_right"
+        android:textSize="@dimen/font_15sp" />
+</RelativeLayout>

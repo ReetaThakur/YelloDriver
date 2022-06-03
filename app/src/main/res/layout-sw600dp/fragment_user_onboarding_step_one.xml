@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+
+    <include
+        android:id="@+id/toolbar_user_onboarding_step_one"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/drawable_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_user_onboarding_step_one">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_100dp"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dimen_180dp"
+            android:paddingTop="@dimen/dimen_100dp"
+            android:paddingEnd="@dimen/dimen_180dp"
+            android:paddingBottom="@dimen/dimen_100dp">
+
+            <TextView
+                style="@style/style_text_regular"
+                android:layout_gravity="center"
+                android:text="@string/step_1_4"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/font_32sp" />
+
+            <TextView
+                style="@style/style_text_bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_70dp"
+                android:text="@string/lbl_register_mobile_no"
+                android:textSize="@dimen/font_32sp" />
+
+            <TextView
+                style="@style/style_text_regular"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_40dp"
+                android:paddingStart="@dimen/dimen_70dp"
+                android:paddingEnd="@dimen/dimen_70dp"
+                android:text="@string/lbl_enter_mobile_no_onboarding"
+                android:textAlignment="center"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/font_22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_80dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="@dimen/dimen_100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_30dp"
+                    android:textColorHint="@color/colorLightGray"
+                    app:hintTextAppearance="@style/TextInputHintSize"
+                    app:hintTextColor="@color/colorYellow">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/user_onboarding_step_one_edtCountryCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorLightGray"
+                        android:focusableInTouchMode="false"
+                        android:imeOptions="actionDone"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:inputType="none"
+                        android:text="+1"
+                        android:textColor="@color/colorLightGray"
+                        android:textColorHint="@color/colorLightGray"
+                        android:textSize="@dimen/font_30sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/user_onboarding_step_one_txtMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_30dp"
+                    android:textColorHint="@color/colorLightGray"
+                    app:hintTextAppearance="@style/TextInputHintSize"
+                    app:hintTextColor="@color/colorYellow">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/user_onboarding_step_one_edtMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorLightGray"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="15"
+                        android:textColor="@color/colorLightGray"
+                        android:textColorHint="@color/colorLightGray"
+                        android:textSize="@dimen/font_30sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_onboarding_step_one_txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_30dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:hint="Enter rider full name"
+                android:textColorHint="@color/colorLightGray"
+                app:hintTextAppearance="@style/TextInputHintSize"
+                app:hintTextColor="@color/colorYellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_onboarding_step_one_edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorLightGray"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textColor="@color/colorLightGray"
+                    android:textColorHint="@color/colorLightGray"
+                    android:textSize="@dimen/font_30sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/fragment_user_onboarding_step_one_btnGetOtp"
+                style="@style/style_button_bold"
+                android:layout_marginTop="@dimen/dimen_80dp"
+                android:padding="@dimen/dimen_20dp"
+                android:text="@string/lbl_get_otp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_25sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

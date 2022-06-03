@@ -1,0 +1,22 @@
+query MyVehicle {
+    yt_vehicle {
+        id
+        photo_file_id
+        registration_date
+        registration_number
+        vehicle_model {
+            title
+        }
+        vehicle_make {
+            title
+        }
+        vehicle_type {
+            title
+        }
+        vehicle_docs {
+            doc_type {
+                slug
+            }
+        }
+    }
+}

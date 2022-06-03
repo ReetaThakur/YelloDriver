@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brand_black"
+    tools:context="com.app.yellodriver.activity.splash.SplashAnimationActivity">
+
+    <LinearLayout
+        android:id="@+id/splash_llWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_80dp"
+        android:layout_marginTop="@dimen/dimen_150dp"
+        android:layout_marginRight="@dimen/dimen_40dp"
+        android:layout_marginBottom="@dimen/dimen_40dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/style_text_bold"
+            android:text="@string/welcome"
+            android:textSize="@dimen/font_75sp" />
+
+        <TextView
+            style="@style/style_text_bold"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="@string/yello_driver"
+            android:textSize="@dimen/font_50sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/splash_llCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_minus100dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/brand_logo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_car"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_200dp"
+    android:layout_height="@dimen/dimen_200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/dimen_10dp"
+    android:layout_marginEnd="@dimen/dimen_10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_contactus_card"
+        app:cardCornerRadius="@dimen/dimen_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_10dp"
+        app:cardBackgroundColor="@color/colorTransparent"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_round_plus"
+            android:padding="@dimen/dimen_30dp"/>
+
+        <ImageView
+            android:id="@+id/fragment_contactus_imgMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="1dp"
+            android:scaleType="centerCrop"></ImageView>
+
+        <ImageView
+            android:id="@+id/fragment_contactus_imgframe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawable_contactus_imageempty" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/fragment_contactus_imgRemove"
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/drawable_circle_purple"
+        android:elevation="5dp"
+        android:src="@drawable/ic_close"
+        android:tint="@color/colorWhite"
+        android:visibility="gone"></ImageView>
+</RelativeLayout>

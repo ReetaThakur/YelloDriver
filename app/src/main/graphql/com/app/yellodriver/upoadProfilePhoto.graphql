@@ -1,0 +1,7 @@
+mutation UploadProfilePhoto($mime_type: String!, $title : String!) {
+    UploadProfilePhoto(metadata: {mime_type: $mime_type, title: $title}) {
+        upload_url
+        view_url
+        file_upload_id
+    }
+}

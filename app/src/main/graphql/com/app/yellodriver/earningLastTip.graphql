@@ -1,0 +1,15 @@
+query EarningLastTip {
+    yt_user_wallet(where: {context: {_eq: "TIP"}}, order_by: [{created_at: desc}], limit: 1) {
+        id
+        amount
+        ride_distance
+        ride_duration
+        created_at
+        ride {
+            id
+            user {
+                full_name
+            }
+        }
+    }
+}

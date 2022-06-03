@@ -1,0 +1,25 @@
+query GetUserSetting {
+    yt_user_setting {
+        id
+        params
+        type
+    }
+}
+
+mutation UpdateUserSettings($params: jsonb){
+    update_yt_user_setting(where: {}, _set: {params: $params}) {
+        returning {
+            params
+            id
+            type
+        }
+    }
+}
+
+mutation InserUserSettings ($params: jsonb, $user_id: uuid){
+    insert_yt_user_setting_one(object: {params: $params, user_id: $user_id, type: "notification"}) {
+            id
+            params
+            type
+    }
+}

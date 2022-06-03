@@ -1,0 +1,5 @@
+mutation InsertSosRequest($driver_user_id: uuid,$location : point, $note : String) {
+    insert_yt_sos_request_one(object: {driver_user_id:$driver_user_id , location: $location, note:$note }) {
+        id
+    }
+}

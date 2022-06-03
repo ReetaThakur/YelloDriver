@@ -1,0 +1,5 @@
+query vehicleLocationByRide($driver_user_id : uuid,$ride_id : uuid) {
+    yt_vehicle_location(where: {driver_user_id: {_eq:$driver_user_id }, ride_id: {_eq: $ride_id}}) {
+        location
+    }
+}

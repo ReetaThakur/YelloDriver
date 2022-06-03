@@ -1,0 +1,5 @@
+mutation CapturePayment($payment_id : uuid!) {
+    CapturePayment(payment_id: $payment_id) {
+        status
+    }
+}

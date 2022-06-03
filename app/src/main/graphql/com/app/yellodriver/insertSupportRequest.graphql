@@ -1,0 +1,5 @@
+mutation InsertSupportRequest($content :  jsonb, $status : String) {
+    insert_yt_support_request_one(object: {content: $content, status: $status}) {
+        id
+    }
+}

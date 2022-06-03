@@ -1,0 +1,9 @@
+query BoardingPassAmount($id : uuid!) {
+    yt_boarding_pass_by_pk(id: $id) {
+        plan {
+            extension_price_1_day
+            extension_price_2_day
+            extension_price_3_day
+        }
+    }
+}

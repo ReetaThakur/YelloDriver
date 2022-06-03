@@ -1,0 +1,39 @@
+query checkDeviceExist($device_id: String!, $driver_user_id: uuid!) {
+    yt_push_registration(where: {device_id: {_eq: $device_id}, user_id: {_eq: $driver_user_id}}) {
+        id
+    }
+}
+
+mutation PushNewRegistration($device_id:String!,$token:String!, $user_id:uuid!) {
+    insert_yt_push_registration_one(
+        object: {
+            device_id: $device_id,
+            platform: "android",
+            provider: "fcm",
+            token: $token,
+            user_id: $user_id
+        }) {
+        id
+    }
+}
+
+mutation PushUpdateRegistration($device_id:String!,$token:String!, $user_id:uuid!) {
+
+    update_yt_push_registration(where: {device_id: {_eq: $device_id}},
+        _set: {
+            device_id: $device_id,
+            platform: "android",
+            provider: "fcm",
+            token: $token,
+            user_id: $user_id
+        }) {
+        affected_rows
+    }
+}
+
+mutation PushDeleteRegistration($device_id: String!) {
+    delete_yt_push_registration(where: {device_id: {_eq: $device_id}}) {
+        affected_rows
+    }
+}
+

@@ -1,0 +1,7 @@
+query GenViewUrl($file_upload_id : uuid!) {
+    GenViewUrl(file_upload_id: [$file_upload_id]) {
+        url
+        expires_at
+        upload_id
+    }
+}

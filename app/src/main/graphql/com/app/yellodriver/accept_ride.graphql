@@ -1,0 +1,12 @@
+mutation AcceptRide($driver_user_id : ID!,$eta_unit: String!, $id: ID!, $ride_id: ID!, $user_id: ID!, $eta_number: Float!) {
+    AcceptRide(ride_request: {driver_user_id: $driver_user_id, eta_unit: $eta_unit, id: $id, ride_id: $ride_id, user_id: $user_id, eta_number: $eta_number}) {
+        available
+        driver_user_id
+        eta_number
+        eta_unit
+        id
+        is_accepted
+        ride_id
+        user_id
+    }
+}

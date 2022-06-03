@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alert_width">500dp</dimen>
+    <dimen name="alert_height">450dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+    <dimen name="dialog_titletxt_size">35sp</dimen>
+    <dimen name="dialog_contenttxt_size">25sp</dimen>
+    <dimen name="dialog_buttontxt_size">25sp</dimen>
+    <dimen name="alert_minheight">300dp</dimen>
+    <dimen name="dialog_button_minwidth">150dp</dimen>
+    <dimen name="dialog_button_minheight">70dp</dimen>
+</resources>

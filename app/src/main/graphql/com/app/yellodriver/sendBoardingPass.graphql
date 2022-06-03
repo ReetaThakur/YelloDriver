@@ -1,0 +1,6 @@
+mutation SendBoardingPass($boarding_pass_id : ID!) {
+    SendBoardingPass(boarding_pass_id: $boarding_pass_id) {
+        boarding_pass_id
+        status
+    }
+}

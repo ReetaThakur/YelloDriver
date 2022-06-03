@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/no_internet_connection_img"
+            android:layout_width="@dimen/dimen_350dp"
+            android:layout_height="@dimen/dimen_350dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_no_internet" />
+
+        <TextView
+            android:id="@+id/no_internet_connection_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="@string/no_internet_connection"
+            android:textColor="@color/colorYellow"
+            android:textSize="@dimen/font_30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/no_internet_connection_txt_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:paddingStart="@dimen/dimen_50dp"
+            android:paddingEnd="@dimen/dimen_50dp"
+            android:text="@string/make_sure_wifi"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_30sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/no_internet_connection_btnTryAgain"
+            style="@style/style_button_bold"
+            android:layout_marginStart="@dimen/dimen_50dp"
+            android:layout_marginTop="@dimen/dimen_50dp"
+            android:layout_marginEnd="@dimen/dimen_50dp"
+            android:padding="@dimen/dimen_20dp"
+            android:text="@string/try_again"
+            android:textSize="@dimen/font_25sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

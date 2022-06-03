@@ -1,0 +1,9 @@
+mutation CreatePayment($order_id : uuid!, $terminal : Boolean!, $currency : String!) {
+    CreatePayment(order_id: $order_id,terminal: $terminal,currency: $currency) {
+        client_secret
+        order_id
+        payment_id
+        transaction_id
+        transaction_status
+    }
+}

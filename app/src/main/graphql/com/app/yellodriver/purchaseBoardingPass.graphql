@@ -1,0 +1,8 @@
+mutation PurchaseBoardingPass($plan_id : uuid!, $on_behalf_of_user_id : uuid!) {
+    PurchaseBoardingPass(plan_id: $plan_id,on_behalf_of_user_id: $on_behalf_of_user_id) {
+        order_id
+        status
+        order_number
+        order_details
+    }
+}

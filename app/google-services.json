@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "164088148985",
+    "firebase_url": "https://yello-taxi.firebaseio.com",
+    "project_id": "yello-taxi",
+    "storage_bucket": "yello-taxi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164088148985:android:767db876eeb4093b010328",
+        "android_client_info": {
+          "package_name": "com.app.yellodriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164088148985-4v56e06brn9fbcr8es06oj6cicgs7k6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.yellodriver",
+            "certificate_hash": "6124c2dfd987572f6aefc15039a5bc0cab60f8d3"
+          }
+        },
+        {
+          "client_id": "164088148985-duacc4m51kjqao4tqk36j1j7p54qohcd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6UmyvMZeDFgxIiiLi6GeJ_Nrw3H9qiP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164088148985-duacc4m51kjqao4tqk36j1j7p54qohcd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164088148985:android:574201d65a9fe51f010328",
+        "android_client_info": {
+          "package_name": "com.solulab.yellotaxidev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164088148985-q2j08edvctqkkvdsp7dleojhi39mvtbm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.solulab.yellotaxidev",
+            "certificate_hash": "6124c2dfd987572f6aefc15039a5bc0cab60f8d3"
+          }
+        },
+        {
+          "client_id": "164088148985-duacc4m51kjqao4tqk36j1j7p54qohcd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6UmyvMZeDFgxIiiLi6GeJ_Nrw3H9qiP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164088148985-duacc4m51kjqao4tqk36j1j7p54qohcd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

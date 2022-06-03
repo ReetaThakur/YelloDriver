@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="navsheet_peekheight">250dp</dimen>
+    <dimen name="startsheet_peekheight">390dp</dimen>
+    <dimen name="sos_margin">420dp</dimen>
+    <dimen name="markcompletesheet_peekheight">240dp</dimen>
+    <dimen name="swipethumb_height">100dp</dimen>
+    <dimen name="swipethumb_width">100dp</dimen>
+    <dimen name="swipeview_width">470dp</dimen>
+    <dimen name="sosbutton_width">80dp</dimen>
+    <dimen name="sosbutton_height">80dp</dimen>
+    <dimen name="layout_onoffline_padding">35dp</dimen>
+</resources>

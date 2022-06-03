@@ -1,0 +1,7 @@
+mutation UploadSupportRequestAttachment($mime_type : String!, $title : String!, $support_request_id : uuid!) {
+    UploadSupportRequestAttachment(metadata: {mime_type: $mime_type, title: $title}, support_request_id: $support_request_id) {
+        file_upload_id
+        upload_url
+        view_url
+    }
+}

@@ -1,0 +1,8 @@
+query Category {
+    category {
+        created_at
+        id
+        title
+        updated_at
+    }
+}

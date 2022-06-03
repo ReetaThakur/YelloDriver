@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_black"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_helpdesk"
+        layout="@layout/toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/llhelpform"/>
+
+    <LinearLayout
+        android:id="@+id/llhelpform"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_helpdesk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerhelpdesk"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="@dimen/dimen_35dp"
+        android:paddingStart="@dimen/dimen_20dp"
+        android:paddingEnd="@dimen/dimen_20dp"
+        android:background="@drawable/ridedetails_rounded_corner"
+        android:scrollbars="vertical"
+        android:layout_weight="0.7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerhelpdesk"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/lbl_describeproblem"
+        android:textSize="@dimen/font_24sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/dimen_20dp"
+        android:paddingBottom="@dimen/dimen_20dp"
+        />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="5"
+                android:hint="@string/hint_typequery"
+                android:textColorHint="@color/colorWhite"
+                android:gravity="start"
+                android:background="@drawable/top_bottomlines"
+                android:textColor="@color/colorWhite"
+                />
+
+            <Button
+                android:id="@+id/btnrequesthelp"
+                style="@style/style_button_bold"
+                android:layout_marginTop="@dimen/dimen_50dp"
+                android:padding="@dimen/dimen_20dp"
+                android:text="@string/submit"
+                android:textSize="@dimen/font_25sp"
+                android:layout_width="wrap_content"
+                android:minWidth="@dimen/dimen_300dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

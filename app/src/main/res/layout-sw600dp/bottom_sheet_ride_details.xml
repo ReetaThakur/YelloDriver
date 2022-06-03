@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ridedetails_rounded_corner"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/style_text_bold"
+            android:text="@string/ride_details"
+            android:textSize="@dimen/font_40sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:alpha="0.5"
+            android:background="@color/brand_textgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/style_text_bold"
+                android:text="@string/pickup"
+                android:textSize="@dimen/font_27sp" />
+
+            <TextView
+                android:id="@+id/ride_details_txtPickup"
+                style="@style/style_text_regular"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:layout_marginBottom="@dimen/dimen_15dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_27sp"
+                tools:text="@string/sample_address" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:alpha="0.5"
+                android:background="@color/brand_textgray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:orientation="horizontal">
+
+                <com.app.yellodriver.customview.CircleImageView
+                    android:id="@+id/ride_details_imgUser"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_place_holder_user"
+                    app:civ_border_color="@color/colorWhite"
+                    app:civ_border_width="@dimen/dimen_1dp" />
+
+                <TextView
+                    android:id="@+id/ride_details_txtUserName"
+                    style="@style/style_text_regular"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dimen_25dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_27sp"
+                    tools:text="@string/person_name" />
+
+                <TextView
+                    android:id="@+id/ride_details_txtStar"
+                    style="@style/style_text_regular"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dimen_25dp"
+                    android:drawableEnd="@android:drawable/btn_star"
+                    android:drawableTint="@color/brand_yellow"
+                    android:gravity="center"
+                    android:textColor="@color/brand_yellow"
+                    android:textSize="@dimen/font_27sp"
+                    tools:text="4.1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_40dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bntRideDetailAccept"
+                    style="@style/style_button_bold"
+                    android:layout_marginEnd="@dimen/dimen_25dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dimen_25dp"
+                    android:text="@string/lbl_accept"
+                    android:textSize="@dimen/font_25sp" />
+
+                <Button
+                    android:id="@+id/bntRideDetailDecline"
+                    style="@style/style_button_bold"
+                    android:layout_marginStart="@dimen/dimen_25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_empty_bg"
+                    android:padding="@dimen/dimen_25dp"
+                    android:text="@string/lbl_decline"
+                    android:textSize="@dimen/font_25sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+query OnBoarderHistory($on_boarded_by : uuid!){
+    yt_user(where: {on_boarded_by: {_eq: $on_boarded_by}}, order_by: [{created_at: desc}]) {
+        full_name
+        country_code
+        mobile
+        boarding_passes {
+            pass_type
+            purchased_at
+            plan {
+                title
+            }
+        }
+    }
+}

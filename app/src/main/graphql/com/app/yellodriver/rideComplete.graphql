@@ -1,0 +1,20 @@
+mutation RideComplete($ride_id: ID!) {
+    CompleteRide(ride_id: $ride_id) {
+        distance
+        id
+        route_map_file_id
+        status
+        boarding_pass_id
+        user_id
+    }
+}
+#mutation RideComplete($ride_id: ID!,$route_map_file_id: ID!) {
+#    CompleteRide(ride_id: $ride_id, route_map_file_id: $route_map_file_id) {
+#        distance
+#        id
+#        route_map_file_id
+#        status
+#        boarding_pass_id
+#        user_id
+#    }
+#}

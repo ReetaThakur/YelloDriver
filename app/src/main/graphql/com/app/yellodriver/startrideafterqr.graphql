@@ -1,0 +1,10 @@
+mutation RideStartByQR($confirmation_code: String!, $ride_id: ID!, $vehicle_id: ID!) {
+  StartRide(confirmation_code: $confirmation_code, ride_id: $ride_id, vehicle_id: $vehicle_id) {
+    boarding_pass_id
+    distance
+    driver_user_id
+    id
+    status
+    user_id
+  }
+}

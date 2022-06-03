@@ -1,0 +1,14 @@
+subscription BoardingPass($order_id : uuid!) {
+    yt_boarding_pass(where: {order_id: {_eq: $order_id}}){
+        id
+        pass_type
+        plan_id
+        purchased_at
+        plan {
+            validity_days
+            id
+            price
+            title
+        }
+    }
+}

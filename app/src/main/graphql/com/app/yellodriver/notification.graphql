@@ -1,0 +1,18 @@
+#query Notification($limit: Int, $offset: Int, $sender_user_id : uuid!) {
+#    yt_notification(limit: $limit, offset: $offset, order_by: [{created_at: desc}], where: {sender_user_id: {_neq: $sender_user_id}}) {
+#        content
+#        id
+#        priority
+#        created_at
+#    }
+#}
+
+# if ask delete below and uncomment first
+query Notification($limit: Int, $offset: Int, $sender_user_id : uuid!) {
+    yt_notification(limit: $limit, offset: $offset, order_by: [{created_at: desc}]) {
+        content
+        id
+        priority
+        created_at
+    }
+}

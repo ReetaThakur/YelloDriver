@@ -1,0 +1,9 @@
+mutation DriverArrived($ride_id : uuid!, $vehicle_id : uuid!) {
+    VehicleArrived(ride_id: $ride_id,vehicle_id: $vehicle_id) {
+        ride_id
+        status
+        vehicle_arrived_at
+    }
+}
+
+

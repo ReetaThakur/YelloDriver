@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_black">
+
+    <include
+        android:id="@+id/tlbrntfsettings"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/svntfstgs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/svntfstgs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlbrntfsettings"
+        app:layout_constraintWidth_percent="0.85">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/nf_setting_rowstyle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/swPushNotify"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/nf_setting_titile_textstyle"
+                        android:text="@string/push_notification" />
+
+                    <TextView
+                        style="@style/nf_setting_subtxt_textstyle"
+                        android:text="@string/desc_notification" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/swPushNotify"
+                    style="@style/nf_setting_switchstyle"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+            <View style="@style/nf_setting_divider" />
+
+            <RelativeLayout style="@style/nf_setting_rowstyle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/swEmailNotify"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/nf_setting_titile_textstyle"
+                        android:text="@string/emailnotification" />
+
+                    <TextView
+                        style="@style/nf_setting_subtxt_textstyle"
+                        android:text="@string/desc_notification" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/swEmailNotify"
+                    style="@style/nf_setting_switchstyle"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+            <View style="@style/nf_setting_divider" />
+
+            <RelativeLayout style="@style/nf_setting_rowstyle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/swSMSNotify"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/nf_setting_titile_textstyle"
+                        android:text="@string/smsnotification" />
+
+                    <TextView
+                        style="@style/nf_setting_subtxt_textstyle"
+                        android:text="@string/desc_notification" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/swSMSNotify"
+                    style="@style/nf_setting_switchstyle"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+            <View style="@style/nf_setting_divider" />
+
+            <RelativeLayout style="@style/nf_setting_rowstyle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/swPromotionNotify"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/nf_setting_titile_textstyle"
+                        android:text="@string/promotionnotification" />
+
+                    <TextView
+                        style="@style/nf_setting_subtxt_textstyle"
+                        android:text="@string/desc_notification" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/swPromotionNotify"
+                    style="@style/nf_setting_switchstyle"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+            <View style="@style/nf_setting_divider" />
+
+            <RelativeLayout style="@style/nf_setting_rowstyle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/swFlashOnRideRequest"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/nf_setting_titile_textstyle"
+                        android:text="@string/flashonriderequestnotification" />
+
+                    <TextView
+                        style="@style/nf_setting_subtxt_textstyle"
+                        android:text="@string/desc_notification" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/swFlashOnRideRequest"
+                    style="@style/nf_setting_switchstyle"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+            <View style="@style/nf_setting_divider" />
+
+            <RelativeLayout style="@style/nf_setting_rowstyle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/swVibrateOnRideRequest"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/nf_setting_titile_textstyle"
+                        android:text="@string/vibreationonriderequestnotification" />
+
+                    <TextView
+                        style="@style/nf_setting_subtxt_textstyle"
+                        android:text="@string/desc_notification" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/swVibrateOnRideRequest"
+                    style="@style/nf_setting_switchstyle"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+            <View style="@style/nf_setting_divider" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

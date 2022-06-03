@@ -1,0 +1,20 @@
+query Plan {
+    yt_plan(order_by: [{validity_days: asc}])  {
+        active
+        created_at
+        description
+        extension_price_1_day
+        extension_price_2_day
+        extension_price_3_day
+        id
+        only_airport_service
+        price
+        sales_commission
+        title
+        total_daily_trips
+        total_trips
+        unlimited_trips
+        updated_at
+        validity_days
+    }
+}

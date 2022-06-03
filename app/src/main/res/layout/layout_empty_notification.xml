@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clnonotifications"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_black"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="@dimen/dimen_300dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/clempty">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:contentDescription="@null"
+            android:src="@drawable/drawable_circle_purple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_notification_big"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelinequarter" />
+
+
+        <ImageView
+            android:layout_width="@dimen/dimen_80dp"
+            android:layout_height="@dimen/dimen_80dp"
+            android:contentDescription="@null"
+            android:src="@drawable/drawable_circle_newnotify"
+            app:layout_constraintBottom_toTopOf="@id/guidelinehalf"
+            app:layout_constraintEnd_toEndOf="@id/guidelinevertical"
+            app:layout_constraintStart_toStartOf="@id/guidelinevertical"
+            app:layout_constraintTop_toTopOf="@id/guidelinehalf" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelinevertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.67" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelinequarter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelinehalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvtoplabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        app:layout_constraintTop_toBottomOf="@+id/clempty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/lbl_nothinghere"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvlabeltwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_navtosettings"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_24sp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvtoplabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btngonotifstgs"
+        style="@style/style_button_bold"
+        android:padding="@dimen/dimen_20dp"
+        android:text="@string/notification_settings"
+        android:textSize="@dimen/font_25sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvlabeltwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:minWidth="@dimen/dimen_400dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

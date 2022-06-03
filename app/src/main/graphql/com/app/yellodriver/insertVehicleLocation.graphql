@@ -1,0 +1,6 @@
+mutation InsertVehicleLocation($driver_user_id : uuid, $rider_user_id : uuid, $ride_id : uuid, $vehicle_id : uuid, $location : point) {
+    insert_yt_vehicle_location_one(object: {driver_user_id: $driver_user_id, rider_user_id: $rider_user_id,
+        ride_id: $ride_id, vehicle_id: $vehicle_id, location: $location}) {
+        id
+    }
+}
